@@ -3,11 +3,11 @@ class Personne:
     self.name = name
     self.prenom = prenom
 
-  def myfunc(self):
+  def Sepresenter(self):
     print("Hello my name is " + self.name + " " + self.prenom)
 
-p1 = Personne("John","enculer")
-p1.myfunc()
+obj1 = Personne("John","enculer")
+obj1.Sepresenter()
 
 
 
