@@ -3,12 +3,18 @@ class Personne:
     self.name = name
     self.prenom = prenom
 
-  def Sepresenter(self):
+  def sepresenter(self):
     print("Hello my name is " + self.name + " " + self.prenom)
 
-obj1 = Personne("John","enculer")
-obj1.Sepresenter()
+  def get_name(self):
+    return(self.name +" "+ self.prenom)
+    
 
+  def set_name(self, name, prenom):
+    self.name = name
+    self.prenom = prenom
 
+obj1 = Personne("toto","coco")
 
-
+obj1.set_name("mimi", "mumu")
+print(obj1.get_name())
